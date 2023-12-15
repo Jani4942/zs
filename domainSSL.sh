@@ -15,7 +15,7 @@ if ls ./.lego/certificates | grep "$domain"
     cp ./.lego/certificates/$domain.crt /etc/x-ui/server.crt
     cp ./.lego/certificates/$domain.key /etc/x-ui/server.key
     path="/home/ssl/$domain/"
-    echo '证书签发成功，证书文件保存在'$path'。'
+    echo '证书签发成功，证书文件保存在/etc/x-ui/。'
 else
     echo '证书签发失败，请检查80端口是否被占用，域名解析或者输入域名是否正确。'
 fi
